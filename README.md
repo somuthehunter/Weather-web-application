@@ -1,2 +1,8 @@
 # Weather-web-application
-It's accuracy  is almost same as per google information and it has use RAPIDAPI .It helps me a lot in this project .Check out this one and ineteresting one
+It use Rapid Api at first install in in your machine 
+after that you can run this programme 
+it is very basic only use the html and javascript 
+for fetching the data.
+
+
+Thank you - Pritam Dutta
