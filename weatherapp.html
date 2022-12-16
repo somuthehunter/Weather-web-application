@@ -13,7 +13,7 @@
 <body >
   <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Weather</a>
+      <a class="navbar-brand" href="#home">Weather</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home" id ="home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">How to use?</a>
+            <a class="nav-link" href="usermanual.html">How to use?</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Location
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Kolkata</a></li>
-              <li><a class="dropdown-item" href="#">Bangalore</a></li>
-              <li><a class="dropdown-item" href="#">Delhi</a></li>
+              <li><a class="dropdown-item" href="#">Kolkata  <span id = "temp"></span><sup><span>&#8451;</span></sup></a></li>
+              <li><a class="dropdown-item" href="#">Bangalore  <span id = "tempba"></span><sup><span>&#8451;</span></sup></a></li>
+              <li><a class="dropdown-item" href="#">Delhi  <span id = "tempd"></span><sup><span>&#8451;</span></sup></a></li>
             </ul>
           </li>
 
@@ -49,13 +49,13 @@
   <!-- main body  -->
 
   <div class="container ">
-    <h1 class="my-4 text-center ">Weather for <span id="cityName"></span></h1>
+    <h1 class="my-4 text-center ">Weather for <span id="cityName" class="cityname"></span></h1>
     <main>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Temperatures</h4>
+              <h4 class="my-0 transparent-bg fw-normal">Temperatures</h4>
             </div>
             <div class="card-body">
               <h1 class="card-title pricing-card-title"></span><span id="temp2"></span><small class="text-muted fw-light"><sup><span>&#8451;</span></sup></small></h1>
@@ -72,7 +72,7 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Humidity</h4>
+              <h4 class="my-0  transparent-bg fw-normal">Humidity</h4>
             </div>
             <div class="card-body">
               <h1 class="card-title pricing-card-title"></span><span id="humidity2"></span><small class="text-muted fw-light">%</small></h1>
@@ -87,9 +87,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm border-primary">
-            <div class="card-header py-3 text-bg-primary border-primary">
-              <h4 class="my-0 fw-normal">Sun & Wind </h4>
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 ">
+              <h4 class="my-0 transparent-bg fw-normal">Sun & Wind </h4>
             </div>
             <div class="card-body">
               <h1 class="card-title pricing-card-title"></span><span id="Wind_speed2"></span><small class="text-muted fw-light">km/h</small></h1>
@@ -105,7 +105,7 @@
         </div>
       </div>
 
-      <h2 class="display-6 text-center mb-4">Other Places Temperature</h2>
+      <h2 class="display-6 text-center mb-4">Other Places <span class="cityname">Temperature and Other Details</span></h2>
 
       <div class="table-responsive">
         <table class="table text-center">
